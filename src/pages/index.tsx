@@ -44,7 +44,10 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center"
   },
   loader: {
+
     display: "flex",
+    marginTop: "10rem",
+    flexDirection: "column",
     alignItems: "center",
     justifyContent: "center"
   }

@@ -3,8 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: ["gatsby-plugin-typescript", `gatsby-plugin-material-ui`],
 }

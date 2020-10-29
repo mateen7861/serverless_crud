@@ -6,6 +6,7 @@ import {
 
   Button,
   Box,
+  CircularProgress,
 } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Header from "../components/Header"
@@ -42,6 +43,11 @@ const useStyles = makeStyles(theme => ({
     flexDirection: "column",
     alignItems: "center"
   },
+  loader: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 }))
 
 export default function Home() {
@@ -94,7 +100,7 @@ export default function Home() {
           >
             Add Todo        </Button>
         </Box>
-        {loading ? <div>loading...</div> : null}
+        {loading ? <div className={classes.loader}><CircularProgress /></div> : null}
         {error ? <div>{error.message}</div> : null}
 
         <List className={classes.root}>

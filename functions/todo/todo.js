@@ -3,9 +3,9 @@ const faunadb = require("faunadb")
 const q = faunadb.query
 
 var client = new faunadb.Client({
-  secret: process.env.FAUNA,
+  secret: "fnAD5T-IJBACB8Fd8mlnySYnJFBs22F1RKHGhlKd",
 })
-
+console.log(process.env)
 const typeDefs = gql`
   type Query {
     todos: [Todo]!
